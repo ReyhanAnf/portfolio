@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Reyhan Andrea Firdaus</title>
+    <link rel="stylesheet" href="output.css">
+  
+</head>
+<body >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/data.js">
+</script>
+
+<script>
+    
+    let sel = document.querySelector('.selengkapnya');
+    let isi = document.querySelector('.isi');
+    let selBool = false;
+
+    let boxeks = document.querySelector('.boxeks');
+    let isieks = document.querySelector('.isieks');
+    let seleks = document.querySelector('.seleks');
+    let eksb = false;
+
+    let button_nav = document.querySelector('#button-nav');
+    let nav = document.querySelector('nav');
+    let setnav = false;
+
+    
+    // let [pb,job,quotes,katakata,readmore] = [document.querySelector('#pb'),document.querySelector('.job'),document.querySelector('.quotes'),document.querySelector('.katakata'),document.querySelector('.readmore')];
+    // if(pb.checked == true){
+    //     job.innerHTML =text_data['inggris']['hero'][0]
+    // }else{
+    //     job.innerHTML =text_data['indonesia']['hero'][0]
+    // }
+
+
+    
+    sel.addEventListener('click',()=>{
+        if(selBool == false){
+            isi.classList.add('h-[90%]');
+            isi.classList.add('-translate-y-[50%]');
+            selBool = true
+        }else{
+            isi.classList.remove('h-[90%]');
+            isi.classList.remove('-translate-y-[50%]');
+            selBool = false
+        }
+    
+    })
+
+    boxeks.addEventListener('click',()=>{
+        let after = `<div class="isieks flex transition-all duration-300 overflow-y-scroll flex-col">
+                <div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div>
+                <div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div><div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div><div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div><div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div><div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div><div class="w-[90%] px-3 py-2 h-[90%] bg-second/75 rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div>
+            </div>`;
+        let before = `<div class="isieks flex transition-all duration-300 overflow-y-scroll w-full">
+                <div class="w-[75%] h-[90%] bg-second rounded-lg my-2 mx-auto flex text-center items-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, neque!
+                </div>
+                <div class="w-[20%] h-[90%] flex flex-wrap justify-between mx-auto items-center my-2">
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                    <div class="i w-[30%] h-[30%] bg-slate-700 rounded-sm"></div>
+                </div>
+            </div>`;
+       
+        if(eksb == false){
+            boxeks.classList.remove('h-[8em]');
+            // isieks.classList.remove('flex-row');
+            // isieks.classList.add('flex-col');
+            isieks.innerHTML = after;
+            eksb = true
+        }else{
+            // boxeks.classList.remove('flex-col');
+            // isieks.classList.add('flex-row');
+            boxeks.classList.add('h-[8em]');
+            isieks.innerHTML = before;
+            eksb = false
+        }
+    
+    })
+
+    let codeimenu = `<svg class="w-5 h-5 rotate-90 transition-all duration-700" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                 viewBox="0 0 210 210" style="enable-background:new 0 0 210 210;" xml:space="preserve">
+                    <path id="XMLID_4_" d="M75,0H15C6.716,0,0,6.716,0,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15V15
+                        C90,6.716,83.284,0,75,0z"/>
+                    <path id="XMLID_6_" d="M75,120H15c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15v-60
+                        C90,126.716,83.284,120,75,120z"/>
+                    <path id="XMLID_8_" d="M195,0h-60c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15V15
+                        C210,6.716,203.284,0,195,0z"/>
+                    <path id="XMLID_10_" d="M195,120h-60c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h60c8.284,0,15-6.716,15-15v-60
+                        C210,126.716,203.284,120,195,120z"/>
+     
+                </svg>
+`;
+    button_nav.addEventListener('click',()=>{
+        if(setnav == true){
+            // nav.classList.remove('top-0');
+            nav.classList.add('-translate-x-96');
+            nav.classList.add('-translate-y-96');
+            nav.classList.add('scale-0');
+            button_nav.innerHTML = codeimenu;
+            setnav = false
+        }else if(setnav == false){
+            nav.classList.remove('-translate-x-96');
+            nav.classList.remove('-translate-y-96');
+            nav.classList.remove('scale-0');
+            button_nav.innerHTML = `<button class='text-xl rotate-90 transition-all duration-700'>X</button>`;
+            setnav = true
+        }
+    })
+    
+</script>
+</body>
+</html>
