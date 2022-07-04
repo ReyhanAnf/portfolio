@@ -17,7 +17,7 @@ const Navbar = ({nav, setNav}) => {
                 </svg>
             </div>
             <div className="text-slate-900 text-xl my-2 py-2 pb-5 border-b-2 border-slate-400"><h1>Reyhan Andrea Firdaus</h1></div>
-            <div className="w-11 h-11 rounded-full m-2 py-2 cursor-pointer"><img src={reyhan} alt="Reyhan" className="relative -top-7 right-1 pt-1 scale-90" /></div>
+            <div className="w-11 h-11 rounded-full m-2 py-2 cursor-pointer"><img src={reyhan} alt="Reyhan" className="relative -top-7 right-1 pt-1 scale-90 hover:animate-spin"  /></div>
         </div>
     )
 }

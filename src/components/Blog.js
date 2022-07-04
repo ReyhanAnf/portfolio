@@ -11,7 +11,7 @@ const Blog = ({textLang}) => {
                 </div>
                 <div className="flex flex-row h-full p-2 group">
                 <div className= {`w-[100%] bg-[url('img/erentech.jpg')] bg-center bg-cover bg-scroll rounded-lg h-[90%] px-2 flex items-center group-hover:bg-opacity-75 shadow-inner shadow-first2`}>
-                    <button className="mx-auto bg-first px-3 py-2 rounded-lg w-24 h-10 hover:scale-90 transition-all duration-300 shadow-md shadow-first2">{textLang['blog'][0]}</button>
+                    <button onClick={()=>{window.location = 'https://erentech.my.id'}} className="mx-auto bg-first px-3 py-2 rounded-lg w-24 h-10 hover:scale-90 transition-all duration-300 shadow-md shadow-first2">{textLang['blog'][0]}</button>
                 </div>
                 </div>
             </div>
