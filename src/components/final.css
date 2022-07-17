@@ -1620,6 +1620,10 @@ video {
     display: none;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-auto {
     height: auto;
   }

@@ -3,7 +3,7 @@ const Introjust = ({setSel, sel, lang, setLang, textLang}) => {
     return(
         <div className="flex flex-col justify-around items-center mb-7 pt-7 bg-gradient-to-t from-first2 to-first">
                 <div className="mb-2 mt-7 p-1 font-semibold"><h1 className="job bahasa">{textLang['hero'][0]}</h1></div>
-                    <div className="pilihBahasa absolute top-20 flex items-center scale-75 cursor-pointer ">
+                    <div className="pilihBahasa top-20 flex items-center scale-75 cursor-pointer ">
                         <div className="text-xs font-semibold px-1">Bahasa</div>
                         <div className="bg-second w-11 rounded-xl shadow-sfirst2">
                         <label  htmlFor="pb" className="cursor-pointer " >

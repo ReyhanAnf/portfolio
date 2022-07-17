@@ -1,12 +1,11 @@
 const text_data = {
     indonesia : {
-        hero: ['Hanya Seorang Pelajar','Ada cara mudah dan cara sulit. Bagian yang sulit adalah menemukan cara yang mudah',`Halo..Semoga baik disana!
+        hero: ['Hanya Seorang Pelajar','Ada cara mudah dan cara sulit. Bagian yang sulit adalah menemukan cara yang mudah',`Halo..Semoga disana baik!
         saya seorang pelajar laki laki yang sangat suka membangun web, sedikit mendesain apalagi mengolah data.`,
                 "Baca Tentang Reyhan Lebih Lanjut",],
         nav:  ["Tentang saya","Skills", "Pengalaman","Projek", "Blog", "Kontak"],
         exp: ["Mempunyai artikel yang membahas tentang wireless ",
             "Lulusan kelas bootcamp Dicoding dibidang data dan pembelajaran mesin",
-            "Aktif berorganisasi",
             "Telah dipercayai google untuk memasang iklan pada blog",
         ],
         project: ["Prediksi Berita","bg-[url('img/erenpro.jpg')]",
@@ -23,18 +22,17 @@ const text_data = {
                 "Didesain & Dibangun oleh",
                 "Reyhan Andrea Firdaus"],
         intro : [
-                "Pengalamanku masih pendek, hanya baru dua tahun saya mempelajari soal pemrograman. Saya masih seorang pelajar yang duduk dibangku sekolah menengah, lebih tepatnya Sekolah Menengah Atas Negeri 6 Tasikmalaya.",
+                "Pengalamanku masih sedikit, dua tahun saya mencoba mempelajari pemrograman. Saya masih seorang pelajar yang duduk dibangku sekolah menengah atas.",
                 "Sejak dua tahun terakhir saya menekuni pada bagian backend yang fokus pada pengolahan data dan juga frontend agar backend bisa saling terhubung. Beberapa projek yang saya buat membuat saya pusing tapi juga membuat saya senang,LOL. "
         ]
     },
     inggris : {
-        hero: ['Only a Student','There is an easy way and a hard way. The hard part is finding the easy way.',`Hello..Good luck there!
+        hero: ['Only a Student','There is an easy way and a hard way. The hard part is finding the easy way.',`Hello..hope you are well!
         I am a boy student who really likes to build web, few design especially processing data.`,
                 "Read More to About Reyhan",],
         nav:  ["About Me","Skills", "Experience","Project", "Blog", "Contact"],
         exp: ["Has article that discuss wireless",
             "Active following the activity bootcamp",
-            "Active in organization",
             "Google has trusted to place ads on blog",
         ],
         project: ["Predict news","bg-[url('img/erenpro.jpg')]",
@@ -51,8 +49,8 @@ const text_data = {
                 "@ Designed & Built by",
                 "Reyhan Andrea Firdaus"],
         intro : [
-                "My experience still sort, two years to i learn about programming. I am student of high school, SMAN 6 Tasikmalaya.",
-                "Sejak dua tahun terakhir saya menekuni pada bagian backend yang fokus pada pengolahan data dan juga frontend agar backend bisa saling terhubung. Beberapa projek yang saya buat membuat saya pusing tapi juga membuat saya senang,LOL. "
+                "I still have little experience, two years I tried to learn about programming. I'm a student in senior high school",
+                "Since the last two years I have been working on a backend that focuses on data processing and also a frontend so that the backend can be connected to each other. Some projects make me dizzy but also make me happy, LOL."
         ]
     }
 }

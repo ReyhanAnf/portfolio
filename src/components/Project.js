@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const Project = ({textLang}) => {
     let [index, setIndex] = useState(0);
+
+    let autoSlide = true;
+    let slideInterval;
+    let intervalTime = 5000;
+
     function overproject(val){
         let value = [0,1,2]
-        if(val == 'kiri'){
-            if(index != 0){
+        if(val === 'kiri'){
+            if(index !== 0){
                 setIndex(index-1);
                 value = [3*index+0,3*index+1,3*index+2];
                 
@@ -15,8 +20,8 @@ const Project = ({textLang}) => {
                 value = [3*index+0,3*index+1,3*index+2];
                 
             }
-        }else if(val == 'kanan'){
-            if(index != 2){
+        }else if(val === 'kanan'){
+            if(index !== 2){
                 setIndex(index+1);
                 value = [3*index+0,3*index+1,3*index+2];
                 
@@ -29,6 +34,26 @@ const Project = ({textLang}) => {
         return value;
     }
     let [isipro, setIsipro] = useState([0,1,2])
+
+    function tricky(){
+        setIsipro(overproject('kanan'))
+    }
+
+    function autoS(){
+        slideInterval = setInterval(tricky, intervalTime);
+    }
+
+    useEffect(()=>{
+        setIsipro([0,1,2])
+    },[])
+
+    useEffect(()=>{
+        if(autoSlide){
+            autoS();
+        }
+        return () => clearInterval(slideInterval)
+    }, [isipro])
+
   return(
     <div className="project p-1  " id="project">
                 <div>
@@ -36,7 +61,7 @@ const Project = ({textLang}) => {
                 </div>
                 <div className="md:overflow-hidden  md:h-[13em] md:flex md:flex-col w-[100%] md:flex-wrap">
                 <div className="pinit erenpro w-full">
-                <div className="w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
+                <div className="hidden md:block w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
                     <div className="text-center ">
                         <h2>{textLang['project'][isipro[0]]}</h2>
                     </div>
@@ -45,6 +70,18 @@ const Project = ({textLang}) => {
                         {textLang['project'][isipro[2]]}
                         </div>
                         <div className={`w-[70%] ${textLang['project'][isipro[1]]} bg-center bg-cover rounded-lg h-[90%] px-2 shadow-md shadow-first2`}>
+                        </div>
+                    </div>
+                </div>
+                <div className="md:hidden w-[90%] h-[12em] bg-first/50 flex rounded-lg mx-auto my-3 flex-col shadow-sfirst2">
+                    <div className="text-center ">
+                        <h2>{textLang['project'][0]}</h2>
+                    </div>
+                    <div className="flex flex-row h-full p-2">
+                        <div className="w-[30%] text-xs h-[90%] pt-3">
+                        {textLang['project'][2]}
+                        </div>
+                        <div className={`w-[70%] ${textLang['project'][1]} bg-center bg-cover rounded-lg h-[90%] px-2 shadow-md shadow-first2`}>
                         </div>
                     </div>
                 </div>

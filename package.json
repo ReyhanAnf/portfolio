@@ -1,5 +1,4 @@
 {
-  "homepage": "http://reyhananf.github.io/portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,14 +9,14 @@
     "git": "^0.1.5",
     "git-remote-add": "^1.0.0",
     "react": "^18.2.0",
+    "react-animated-css": "^1.2.1",
+    "react-charts": "^3.0.0-beta.38",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "remote": "^0.2.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,8 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
